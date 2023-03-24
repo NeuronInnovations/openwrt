@@ -39,11 +39,13 @@ make4.1+ perl python3.6+ rsync subversion unzip which
    
 3. Run `cp diffconfig .config; make defconfig` to build the Neuron specific config
 
-4. Run `make -j $(($(nproc)+1)) download world` to build your firmware. This will download all sources, build the
+4. Apply the bugfix patches to the Turris packages `./patches/apply.sh`
+
+5. Run `make -j $(($(nproc)+1)) download world` to build your firmware. This will download all sources, build the
    cross-compile toolchain and then cross-compile the GNU/Linux kernel & all chosen
    applications for your target system.
    
-5. The built image will be `bin/targets/mvebu/cortexa9/openwrt-mvebu-cortexa9-cznic_turris-omnia-sysupgrade.img.gz`
+6. The built image will be `bin/targets/mvebu/cortexa9/openwrt-mvebu-cortexa9-cznic_turris-omnia-sysupgrade.img.gz`
 
 ### Related Repositories
 
