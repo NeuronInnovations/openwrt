@@ -17,7 +17,7 @@
 /overlay
 /package/feeds
 /package/openwrt-packages
-/*.patch
+#/*.patch
 /llvm-bpf*
 key-build*
 *.orig
